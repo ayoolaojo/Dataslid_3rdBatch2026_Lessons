@@ -15,6 +15,7 @@ body{
    
 }
 
+
 header{
     height: 15vh;
     width: 100%;
@@ -63,6 +64,15 @@ header nav ul li a {
     color: green;
     font-weight:bold;
 }
+/* header nav ul li a:hover {
+    text-decoration: underline;
+    color: red
+} */
+
+header nav ul li a:visited {
+    text-decoration: underline;
+    color:purple;
+}
 
 
 header button {
@@ -89,11 +99,31 @@ header button a  {
     flex-wrap: wrap;
 }
 
+.container div:nth-child() {
+   background-color: yellow;
+} 
 .container div {
   height:20vh ;
   width:30% ;
   background-color:blue;
 }
+
+.container2 {
+    display: grid;
+    height: 50vh;
+    width: 100%;
+    background-color: tomato;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    
+}
+
+.container2 div{
+    background-color: teal;
+  
+}
+
+
 
 
 
