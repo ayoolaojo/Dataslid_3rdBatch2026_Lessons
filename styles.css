@@ -124,6 +124,24 @@ header button a  {
 }
 
 
+@media screen and (max-width: 600px) {
+     header{
+        width: 100%;
+        background-color: yellow;
+     }
+
+     header nav {
+        display: none;
+     }
+}
+
+.cont {
+    height: 50vh;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+
 
 
 

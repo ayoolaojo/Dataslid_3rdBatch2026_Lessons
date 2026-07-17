@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    gap: 10px;
+}
+
+
+div{
+    background-color: teal;
+    flex:1
+}
+
+div:nth-child(even){
+    background-color: yellow;
+    flex:0.5
+    
+}
