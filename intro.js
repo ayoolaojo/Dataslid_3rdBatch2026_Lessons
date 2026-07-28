@@ -52,10 +52,77 @@ console.log('Firstname')
 // Number - numbers
 // boolean = true/false
 // BigInt =  10000014tn
-// Object - 
+// 
 // null
 // undefined
 // symbols
+// Object - 
+
+
+
+console.log(typeof(firstName))
+
+const isStudent =  true
+console.log(typeof(isStudent))
+
+const serialNumber =   10000014n
+
+console.log(typeof(serialNumber))
+
+const scores =  null
+
+console.log(typeof(scores))
+
+
+let fruit;
+
+console.log(typeof(fruit))
+
+
+const person = {
+  name : 'Mubarak',
+  age :  40,
+  isSingle : true,
+  religion : 'Islam',
+  gender: 'male',
+}
+
+// dot Notation.
+// bracket Notation
+
+
+console.log(person.religion)
+console.log(person.religion)
+console.log(person.religion)
+
+const bio =  ` His name is ${person.name}, 
+              he's ${person.age} years old. 
+              ${person.gender}. 
+              He pratcises ${person.religion}
+              `
+
+              const summary = ` i have a friend whose name is ${person['name']} `
+
+           
+
+
+              console.log(bio)
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
 
 
 

@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Counter</title>
 </head>
 <body>
-    
+
+                <h1>Counter App</h1>
+         <p id="displayCount"></p>
+         <button id="addBtn">Add</button>
+         <button  id="decBtn">Decrease</button>
+         <button id="resetBtn">Reset</button>
+
+
+    <script>
+         const displayCount =   document.getElementById('displayCount')
+         const addBtn =   document.getElementById('addBtn')
+         const decBtn =   document.getElementById('decBtn')
+         const resetBtn =   document.getElementById('resetBtn')
+
+         let count = 0;
+
+         displayCount.innerText =  count;
+
+         addBtn.addEventListener('click', ()=>{
+             count =  count + 1
+
+             displayCount.innerText = count
+
+             
+
+
+         })
+
+          decBtn.addEventListener('click', ()=>{
+             count =  count - 1
+
+             displayCount.innerText = count
+
+             
+
+
+         })
+
+
+         resetBtn.addEventListener('click', ()=> {
+            count = 0
+            displayCount.innerText = count
+         })
+
+
+    </script>
 </body>
 </html>
