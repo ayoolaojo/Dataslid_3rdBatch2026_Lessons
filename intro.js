@@ -1,131 +1,174 @@
-
-
-
 // document.body.style.backgroundColor = 'red'
 // document.body.style.padding = '2rem'
 
+const myName = "Ayoola";
 
-
-
-
-const  myName = 'Ayoola';
-
-const  myAge = 20;
+const myAge = 20;
 console.log(myName);
 
 console.log(myAge);
 
-const college = 'Dataslid';
-
+const college = "Dataslid";
 
 const firstNum = 10;
-const secNum = 15
+const secNum = 15;
 
-const total = firstNum + secNum
+const total = firstNum + secNum;
 
-console.log(total)
-console.log(firstNum * secNum)
-console.log(firstNum - secNum)
-console.log(firstNum /secNum)
-console.log(firstNum ** secNum)
+console.log(total);
+console.log(firstNum * secNum);
+console.log(firstNum - secNum);
+console.log(firstNum / secNum);
+console.log(firstNum ** secNum);
 
+const combined = myName + " " + college;
 
-const combined = myName + ' ' +  college
+console.log(combined);
 
-console.log(combined)
+console.log(16 + "12");
+console.log(16 + 12);
 
-console.log(16 + '12')
-console.log(16 + 12)
+let firstName = "Dada";
+firstName = "Clinton";
 
+console.log(firstName);
+console.log("Firstname");
 
-
-let firstName = 'Dada';
-firstName = 'Clinton'
-
-console.log(firstName)
-console.log('Firstname')
-
-
-// Javascript Datatypes 
+// Javascript Datatypes
 
 // Strings - ''
 // Number - numbers
 // boolean = true/false
 // BigInt =  10000014tn
-// 
+//
 // null
 // undefined
 // symbols
-// Object - 
+// Object -
 
+console.log(typeof firstName);
 
+const isStudent = true;
+console.log(typeof isStudent);
 
-console.log(typeof(firstName))
+const serialNumber = 10000014n;
 
-const isStudent =  true
-console.log(typeof(isStudent))
+console.log(typeof serialNumber);
 
-const serialNumber =   10000014n
+const scores = null;
 
-console.log(typeof(serialNumber))
-
-const scores =  null
-
-console.log(typeof(scores))
-
+console.log(typeof scores);
 
 let fruit;
 
-console.log(typeof(fruit))
-
+console.log(typeof fruit);
 
 const person = {
-  name : 'Mubarak',
-  age :  40,
-  isSingle : true,
-  religion : 'Islam',
-  gender: 'male',
-}
+  name: "Mubarak",
+  age: 40,
+  isSingle: true,
+  religion: "Islam",
+  gender: "male",
+};
 
 // dot Notation.
 // bracket Notation
 
+console.log(person.religion);
+console.log(person.religion);
+console.log(person.religion);
 
-console.log(person.religion)
-console.log(person.religion)
-console.log(person.religion)
-
-const bio =  ` His name is ${person.name}, 
+const bio = ` His name is ${person.name}, 
               he's ${person.age} years old. 
               ${person.gender}. 
               He pratcises ${person.religion}
-              `
+              `;
 
-              const summary = ` i have a friend whose name is ${person['name']} `
+const summary = ` i have a friend whose name is ${person["name"]} `;
 
-           
+console.log(bio);
 
+const user = {
+  name: "Ayoola",
+  age: 25,
+  address: {
+    city: "Lagos",
+    country: "Nigeria",
+  },
 
-              console.log(bio)
-
-
-
-
-
-
-
-
-
-
-
-
-    
+  hobbies: {
+    sport: "Football",
+    food: "Pizza",
+  }
+};
 
 
+console.log(user.address.city)
+console.log(user.address.country)
+console.log(user.hobbies)
+
+// Javascript arrays
+
+const schools = ['UniOsun', 'OAU', 'Adeleke University', 'Kwasu', 'Lautech', 50 , false, {
+  name: 'Ayoola',
+  id: 4001,
+}, 'ABC' ]
+
+ console.log(schools)
+
+ console.log(schools.length)
+
+ const nat =  'justeryu'
+ console.log(nat.length)
+
+ const firstSchool =  schools[0]
+
+
+ console.log(firstSchool)
+
+ console.log(schools[6])
+
+
+
+ const AllStudents =[
+   {
+    studentName:'Fawaz',
+     matricNumber:1111,
+     department: 'Computer Science',
+     gender: 'male'
+    } ,
+
+
+    {
+    studentName:'David',
+     matricNumber:1112,
+     department: 'Computer Technology',
+     gender: 'female'
+    } ,
+  
+  ] 
+
+
+  console.log(AllStudents[0].department)
+
+
+  // javascript operators
+  // Arithmetic operator  - +  *  **  /  %   ++   -- 
+
+  console.log(5%3)
+
+  let score =  15
+  score--
 
 
 
 
+ console.log(score)
 
 
+
+
+   
+
+ 
 
