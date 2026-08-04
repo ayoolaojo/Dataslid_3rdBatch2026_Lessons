@@ -166,6 +166,69 @@ const schools = ['UniOsun', 'OAU', 'Adeleke University', 'Kwasu', 'Lautech', 50 
  console.log(score)
 
 
+    //  ==    ===
+    // ! - not
+    // &&  -  and
+        // || -     or
+
+    // +=
+
+    //  > <   <=  >=
+     
+
+    console.log(2 != '2')
+    console.log(10 === 10)
+
+
+    let pet =  'dog'
+
+      pet += ' is a pet'
+
+      console.log(pet)
+
+      let grade =  15
+
+      grade /=  30
+
+      console.log(grade)
+
+
+
+      const age  =  18
+      const hasPVC   =   false
+
+
+      if(age > 17){
+        console.log('Youre an adult')
+      }else{
+        console.log('Sorry, minors not aloowed here')
+      }
+
+
+
+      if(age>17 || hasPVC){
+             console.log(`You're eligible to vote`)
+      } else{
+         console.log(`NOT ELIGIBLE to vote`)
+      }
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+
+
 
 
    
