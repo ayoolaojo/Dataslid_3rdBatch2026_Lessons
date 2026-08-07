@@ -213,6 +213,68 @@ const schools = ['UniOsun', 'OAU', 'Adeleke University', 'Kwasu', 'Lautech', 50 
       }
 
 
+//             "Positive" if the number is greater than 0
+// "Negative" if less than 0
+// "Zero" if equal to 0
+
+
+     const number =  99
+
+     if(number > 0 ) {
+      console.log('number is POSITIVE')
+     } else if (number < 0) {
+        console.log('Number is NEGATIVE')
+     } else{
+        console.log('number is ZERO')
+     }
+
+
+
+    //  Even or odd
+
+         if(number % 2 === 0){
+           console.log(`${number} is an EVEN number`)
+         } else {
+            console.log(`${number} is an ODD number`)
+         }
+
+
+//          "You can vote" if age is 18 or older.
+// "You cannot vote" otherwise.
+  
+
+        // //  GRADING SYSTEM
+        // A1 (Excellent): 75% to 100%
+// B2 (Very Good): 70% to 74%
+// B3 (Good): 65% to 69%
+// C4 to C6 (Credit): 50% to 64%
+// D7 and E8 (Pass): 40% to 49%
+// F9 (Fail): 0% to 39% 
+
+
+
+        let scoreInput =   prompt('Enter your score')
+        scoreInput =  Number(scoreInput)
+
+        if (scoreInput >= 75 ) {
+             alert(`Excellent! You scored ${scoreInput} Your grade is A1`)
+        } else if (scoreInput >= 70 && scoreInput < 75){
+            alert(`Very Good! You scored ${scoreInput} out of 100. Your grade is B2`)
+        }  else if (scoreInput >= 65 && scoreInput < 70 ){
+            alert(`Good! You scored ${scoreInput} out of 100. Your grade is B3`)
+        } else if (scoreInput >= 50 && scoreInput < 65 ){
+            alert(` You scored ${scoreInput} out of 100. Your grade is C`)
+        } else if (scoreInput >= 40 && scoreInput < 50 ){
+            alert(` You scored ${scoreInput} out of 100. Your grade is D`)
+        }else{
+            alert(` You scored ${scoreInput} out of 100. Your grade is F. Work harder next time`)
+        }
+
+
+
+      
+
+
 
 
 
