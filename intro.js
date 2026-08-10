@@ -271,6 +271,35 @@ const schools = ['UniOsun', 'OAU', 'Adeleke University', 'Kwasu', 'Lautech', 50 
         }
 
 
+        // Tenary operator   
+
+           const num =  11
+          //  if( num%2===0) {
+          //      console.log(`${num} is EVEN`)
+          //  } else {
+          //   console.log(`${num} is ODD`)
+          //  }
+
+
+           num % 2 === 0 ? console.log(`${num} is EVEN`) : console.log(`${num} is ODD`)
+
+           let password = "javascript123";
+
+// If the password length is 8 or more:
+
+// Strong Password
+
+// Otherwise:
+
+// Weak Password   
+
+const psw = 'gshi152'
+
+psw.length >= 8? console.log('Strong Password'): console.log('Weak Password')
+
+
+
+
 
       
 
