@@ -253,22 +253,22 @@ const schools = ['UniOsun', 'OAU', 'Adeleke University', 'Kwasu', 'Lautech', 50 
 
 
 
-        let scoreInput =   prompt('Enter your score')
-        scoreInput =  Number(scoreInput)
+        // let scoreInput =   prompt('Enter your score')
+        // scoreInput =  Number(scoreInput)
 
-        if (scoreInput >= 75 ) {
-             alert(`Excellent! You scored ${scoreInput} Your grade is A1`)
-        } else if (scoreInput >= 70 && scoreInput < 75){
-            alert(`Very Good! You scored ${scoreInput} out of 100. Your grade is B2`)
-        }  else if (scoreInput >= 65 && scoreInput < 70 ){
-            alert(`Good! You scored ${scoreInput} out of 100. Your grade is B3`)
-        } else if (scoreInput >= 50 && scoreInput < 65 ){
-            alert(` You scored ${scoreInput} out of 100. Your grade is C`)
-        } else if (scoreInput >= 40 && scoreInput < 50 ){
-            alert(` You scored ${scoreInput} out of 100. Your grade is D`)
-        }else{
-            alert(` You scored ${scoreInput} out of 100. Your grade is F. Work harder next time`)
-        }
+        // if (scoreInput >= 75 ) {
+        //      alert(`Excellent! You scored ${scoreInput} Your grade is A1`)
+        // } else if (scoreInput >= 70 && scoreInput < 75){
+        //     alert(`Very Good! You scored ${scoreInput} out of 100. Your grade is B2`)
+        // }  else if (scoreInput >= 65 && scoreInput < 70 ){
+        //     alert(`Good! You scored ${scoreInput} out of 100. Your grade is B3`)
+        // } else if (scoreInput >= 50 && scoreInput < 65 ){
+        //     alert(` You scored ${scoreInput} out of 100. Your grade is C`)
+        // } else if (scoreInput >= 40 && scoreInput < 50 ){
+        //     alert(` You scored ${scoreInput} out of 100. Your grade is D`)
+        // }else{
+        //     alert(` You scored ${scoreInput} out of 100. Your grade is F. Work harder next time`)
+        // }
 
 
         // Tenary operator   
@@ -296,6 +296,191 @@ const schools = ['UniOsun', 'OAU', 'Adeleke University', 'Kwasu', 'Lautech', 50 
 const psw = 'gshi152'
 
 psw.length >= 8? console.log('Strong Password'): console.log('Weak Password')
+
+
+
+// String Methods
+// length
+// toUpperCase
+// toLowerCase
+// charAt
+// at
+// indexOf
+// slice
+
+const eName =  'Dataslida'
+
+console.log(eName.length)
+
+
+console.log(eName.toUpperCase())
+console.log(eName.toLowerCase())
+console.log(eName.charAt(2))
+console.log(eName.at(-3))
+console.log(eName.indexOf('a'))
+console.log(eName.lastIndexOf('a'))
+console.log(eName.includes('k'))
+console.log(eName.startsWith('z'))  
+
+const newName = '      I am Isaac, I am a man      '
+console.log(newName.slice(0,5))
+
+console.log(newName.substr(6, 12))
+
+console.log(newName.replace('Isaac', 'John'))
+console.log(newName.replaceAll('I', 'We'))
+
+console.log(newName.trim())
+
+const apology = 'I will never do that again'
+console.log(apology.repeat(10))
+
+console.log(apology.split(' '))
+
+
+const combine = apology.concat(newName)
+console.log(combine)
+
+
+// Array Methods
+// length
+// push
+// pop
+// shift
+// unshift
+
+
+
+const studentList =  ['Clinton','David', 'Qodri' ]
+
+console.log(studentList.length)
+console.log(studentList)
+studentList.push('Dataslid')
+
+console.log(studentList)
+
+const numero = [1, true, 10,45,78, false]
+numero.pop()
+
+console.log(numero)
+
+numero.unshift('Ayo')
+
+console.log(numero)
+
+const newNumero = numero.slice(2,5)
+console.log(newNumero)
+
+const joinedArrays = numero.concat(newNumero,studentList)
+console.log(joinedArrays)
+
+console.log(joinedArrays.indexOf('Dataslid'))
+console.log(joinedArrays.includes('Osun'))
+
+const changed =  joinedArrays.join(',')
+console.log(changed)
+
+const reversed = joinedArrays.reverse()
+console.log(reversed)
+
+const sorted =  joinedArrays.sort()
+console.log(sorted)
+
+const fruits = ['orange', 'apples', 'banana', 'mango', 'cherry', 'watermelon']
+console.log(fruits)
+
+  fruits.splice(1,0, 'pawpaw')
+console.log(fruits)
+
+const numb = [10,7,3,5,78,2,5,100, 51]
+console.log(numb)
+
+const doubled =numb.map((n)=>n*2)
+console.log(doubled)
+
+const above50 = numb.filter((x)=> x < 18)
+console.log(above50)
+
+const getEven = numb.find((num)=> num%2 === 0)
+console.log(getEven)
+
+const totalz =  numb.reduce((x,y)=> x+y , 0)
+console.log(totalz)
+
+const anyEven = numb.every((num)=> num % 2 === 0)
+console.log(anyEven)
+
+
+function print(string) {
+  console.log(string)
+}
+
+
+print('Dataslid')
+
+
+print('Clinton is in class today')
+
+function divide (x,y) {
+  print(x/y)
+}
+
+divide(10,2)
+
+
+
+const multiply = (a,b) => {
+  print(a*b)
+}
+
+multiply(10,12)
+
+
+// Parameters and arguments in functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
