@@ -439,6 +439,95 @@ multiply(10,12)
 // Parameters and arguments in functions
 
 
+function Greet () {
+  console.log(`You are  welcome`)
+}
+
+function GreetPerson (name) {
+    console.log(`You're welcome, ${name}`)
+}
+
+function addTwoNumbers () {
+
+}
+
+
+GreetPerson('Adams')
+GreetPerson('Peter')
+
+
+Greet()
+Greet()
+Greet()
+
+
+GreetPerson('Yusuff')
+
+function add (x,y){
+   return x+y
+}
+
+const tot =  add(10,7)
+
+console.log(tot)
+
+
+const substract = (a,b) => {
+  return a-b
+}
+
+console.log(substract(7,9))
+
+
+// write a function that formats a name and get the first letter of the first and the last name to form the initial
+
+// ayoola johnson
+
+0
+
+// write a function that will encript the 6th to 9th number of any given phone number. 
+
+
+// write a function that will log each element in an array to the console
+
+
+function encryptNum (phoneNum) {
+  return  phoneNum.slice(0,5) + '****' + phoneNum.slice(9)
+}
+
+
+const hid = encryptNum('78954263215724252')
+console.log(hid)
+
+
+
+ const fruitz = ['orange', 1, true, 'apples', 'banana', 'mango', 'cherry', 'watermelon']
+
+ console.log(fruitz)
+
+//  for(i = 0; i < fruitz.length; i++) {
+//      console.log(fruitz[i])
+//  }
+
+
+// for(let x of fruitz){
+//     console.log(x)
+// }
+
+
+ fruitz.map((x)=>console.log(x))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
