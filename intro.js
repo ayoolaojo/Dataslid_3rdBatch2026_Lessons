@@ -518,6 +518,110 @@ console.log(hid)
  fruitz.map((x)=>console.log(x))
 
 
+    function nameInitial (name) {
+
+        const names =  name.split(' ')
+
+       return names[0].at(0).toUpperCase() + names[1].at(0).toUpperCase()
+      
+
+        
+      
+
+
+    }
+
+    console.log(nameInitial('Ayoola Ojo'))
+
+
+    const myInital = nameInitial('Yussuf Adams')
+
+    console.log(myInital)
+
+
+    // Javascript Dom
+
+    // document.body.style.backgroundColor = 'red'
+
+    const heading = document.querySelector('.heading')
+      const redBg = document.getElementById('redBg')
+      const greenBg = document.getElementById('greenBg')
+      const changeTxt =  document.querySelector('#changeTxt')
+      
+
+   
+
+  
+
+
+
+
+redBg.addEventListener('click', ()=>{
+  document.body.style.backgroundColor = 'red'
+})
+
+greenBg.addEventListener('click', ()=>{
+  document.body.style.backgroundColor = 'green'
+})
+
+
+changeTxt.addEventListener('dblclick', ()=>{
+  heading.innerText = 'Welcome to Dataslid Javascript class'
+  
+})
+
+const greet = document.getElementById('greet')
+
+greet.textContent = 'Lorem ipsum'
+
+
+
+const colorInput = document.getElementById('colorInput')
+const changeBg =  document.getElementById('changeBg')
+const resetBg =  document.getElementById('resetBg')
+const createdCont = document.getElementById('createdCont')
+
+
+
+
+changeBg.addEventListener('click', ()=>{
+   const bg = colorInput.value
+   document.body.style.backgroundColor = bg
+   colorInput.value = ''
+})
+
+
+resetBg.addEventListener('click', ()=>{
+  document.body.style.backgroundColor = 'white'
+})
+
+
+const ayoola = document.createElement('div')
+ayoola.style.height = '40vh';
+ayoola.style.width = '50%'
+ayoola.style.backgroundColor = 'green'
+ayoola.style.color = 'white'
+
+createdCont.append(ayoola)
+
+const paragraph = document.createElement('p')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
