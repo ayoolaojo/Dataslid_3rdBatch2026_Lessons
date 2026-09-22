@@ -99,6 +99,92 @@ if(price >= 5000000){
 
 
 
+    for(i = 1;i <= 20; i++){
+       console.log(i)
+    }
+
+    const fruits = ['apples', 'orange', 'pear', 'pawpaw']
+
+      
+
+    for(i = 0; i<fruits.length;i++) {
+       console.log(fruits[i] + ' ' + 'Dataslid')
+    }
+
+    for( let fruit of fruits) {
+      console.log(fruit)
+    }
+
+
+    fruits.map((fru)=>(
+      console.log(fru + ' Ayoola')
+    ))
+
+     
+
+
+//  const newFruit = 'banana'
+const allFruits = [...fruits,'banana']
+
+console.log(allFruits)
+
+
+// PoP
+// Push
+// shift 
+// Unshift 
+// at 
+// slice 
+// splice 
+// forEach 
+// map 
+// filter 
+// reduce 
+// every 
+// some 
+// sort 
+// find 
+// join    
+
+
+const cars = ['benz', 'bmw','volvo','toyota', 'mazda', 'honda']
+
+// const favCars= cars.slice(1)
+// console.log(favCars)
+// console.log(cars)
+// cars.splice(2,2, 'pawpaw', 'banana')
+// console.log(cars)
+
+
+cars.map((a)=>(
+  console.log(a)
+))
+
+const carWithO = cars.filter((car)=>(
+  car.includes('o')
+))
+
+console.log(carWithO)
+
+
+const newCar = cars.find((car)=>(
+  car.includes('o')
+))
+
+console.log(newCar)
+
+const scores = [10, 20, 70, 80, 90,2 ]
+scores.push(18)
+
+const totalAmount = scores.reduce((x,y)=>x + y, 0)
+console.log(totalAmount)
+
+
+
+
+
+
+
 
 
 
