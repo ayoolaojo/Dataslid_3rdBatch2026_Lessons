@@ -179,8 +179,25 @@ scores.push(18)
 const totalAmount = scores.reduce((x,y)=>x + y, 0)
 console.log(totalAmount)
 
+const counter = document.getElementById('counter')
+const decreaseBtn= document.getElementById('decreaseBtn')
+const increaseBtn = document.getElementById('inCreaseBtn')
 
 
+let countValue = 0;
+
+
+decreaseBtn.addEventListener('click', ()=>{
+    countValue -=1;
+    counter.textContent = countValue
+})
+
+increaseBtn.addEventListener('click', ()=>{
+    countValue++;
+    counter.textContent = countValue
+})
+
+  
 
 
 
