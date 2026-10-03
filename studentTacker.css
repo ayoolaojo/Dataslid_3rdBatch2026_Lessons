@@ -1,0 +1,394 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+ min-height: 100vh;
+ width: 100%;
+ background-color: blue;
+ color:white;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+#studentList {
+    min-height: 50vh;
+    width: 50%;
+    background-color:white;
+    color:blue;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    
+} */
+
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 50px 20px;
+}
+
+
+/* =========================
+   MAIN APP
+========================= */
+
+.app {
+  width: 100%;
+  max-width: 750px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 35px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #2563eb;
+
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 2.3rem;
+  color: #111827;
+
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.summary {
+  background: #eff6ff;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 12px;
+
+  padding: 16px;
+
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+#report {
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+
+/* =========================
+   STUDENT SECTION
+========================= */
+
+.students-section {
+  margin-bottom: 35px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.section-heading h2,
+.add-section h2 {
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.section-heading span {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+
+/* =========================
+   STUDENT LIST
+========================= */
+
+#studentList {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+/*
+  Your JavaScript creates
+  the <li> elements dynamically.
+*/
+
+#studentList li {
+  min-height: 55px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 14px 16px;
+
+  background: #f9fafb;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+#studentList li:hover {
+  transform: translateX(3px);
+
+  border-color: #bfdbfe;
+
+  background: #f8fbff;
+}
+
+
+/* =========================
+   DELETE BUTTON
+========================= */
+
+#studentList li button {
+  margin-left: auto;
+
+  border: none;
+
+  background: #fee2e2;
+
+  color: #dc2626;
+
+  padding: 6px 10px;
+
+  border-radius: 6px;
+
+  font-size: 0.75rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+#studentList li button:hover {
+  background: #dc2626;
+  color: white;
+}
+
+
+/* =========================
+   ADD STUDENT SECTION
+========================= */
+
+.add-section {
+  border-top: 1px solid #e5e7eb;
+
+  padding-top: 25px;
+}
+
+.add-section h2 {
+  margin-bottom: 15px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form {
+  display: grid;
+
+  grid-template-columns: 1fr 150px;
+
+  gap: 12px;
+}
+
+.form input {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  font-size: 0.9rem;
+
+  background: white;
+
+  transition: 0.2s ease;
+}
+
+.form input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form input::placeholder {
+  color: #9ca3af;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.form button {
+  border: none;
+
+  border-radius: 9px;
+
+  padding: 13px 16px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+/* Add Student */
+
+#addStudentBtn {
+  background: #2563eb;
+
+  color: white;
+
+  grid-column: span 1;
+}
+
+#addStudentBtn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+}
+
+
+/* Passed Students */
+
+.secondary-btn {
+  background: #ecfdf5;
+
+  color: #047857;
+
+  border: 1px solid #a7f3d0 !important;
+}
+
+.secondary-btn:hover {
+  background: #047857;
+
+  color: white;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 20px 12px;
+  }
+
+  .app {
+    padding: 25px 18px;
+
+    border-radius: 14px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .section-heading {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 5px;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  #addStudentBtn {
+    grid-column: auto;
+  }
+
+}
